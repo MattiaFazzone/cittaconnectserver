@@ -3,14 +3,14 @@ import express from "express";
 import cors from "cors";
 import { createClient } from "@supabase/supabase-js";
 
-// Carica le variabili di ambiente
+// Variabili di ambiente
 const SUPABASE_URL = process.env.SUPABASE_URL;
 const SUPABASE_KEY = process.env.SUPABASE_KEY;
 
-// Inizializza Supabase
+// Connessione a Supabase
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
-// Inizializza Express
+// Server Express
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -46,3 +46,4 @@ app.get("/comunicazioni", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server CittaConnect attivo e funzionante su porta ${PORT}`);
 });
+
