@@ -4,8 +4,8 @@ const express = require("express");
 const cors = require("cors");
 const { createClient } = require("@supabase/supabase-js");
 
-const SUPABASE_URL = "SOSTITUISCI_CON_TUO_URL_SUPABASE";
-const SUPABASE_ANON_KEY = "SOSTITUISCI_CON_TUA_ANON_KEY";
+const SUPABASE_URL = "https://wiwftbiibgzouqbvvajd.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indpd2Z0YmlpYmd6b3VxYnZ2YWpkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI1MjEzOTYsImV4cCI6MjA3ODA5NzM5Nn0.6oWdPCGOc6qjXFoUA8fWkhuKdLXH7k_NQTD4hIsAH_s";
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
